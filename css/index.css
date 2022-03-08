@@ -13,7 +13,10 @@ body {
     padding: 20px;
     height: 100vh;
   }
-  
+  .container__main {
+    flex: 1;
+    overflow: auto;
+}
   .page-title {
     color:#ffffff;
     margin: 0 0 5px;
