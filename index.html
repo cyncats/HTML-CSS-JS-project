@@ -2,7 +2,6 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/index.css"> 
-    <script type="text/javascript" src="js/index.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +9,7 @@
   </head>
 
 <body>
-
+  <script type="text/javascript" src="js/index.js"></script>
   <div class="menu_nav">
     <a href="https://www.instagram.com/cynticats/" target="_blank">
       <img src="./images/insta.png" alt="" class="alura-logo">
@@ -31,21 +30,21 @@
          <div class="grid-layout" id="btn_Boletim">
               <a href="#boletim" target="_self" rel="next" class="link_click">
                   <img class="icons" src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/c30e5db020918cfa933147fceef0106b8edbd182/files_boletim.svg" alt="icon boletim">
-                  <span class="name_button">Boletim</span>
+                  <span class="name_button">Contact</span>
               </a>
          </div>
          
          <div class="grid-layout" id="btn_help">
               <a href="#ajuda" target="_self" rel="next" class="link_click" >
                   <img class="icons" src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/c30e5db020918cfa933147fceef0106b8edbd182/help.svg" alt="icon help">
-                  <span class="name_button">Ajuda</span>
+                  <span class="name_button">Help</span>
               </a>
          </div>
          
          <div class="grid-layout" id="btn_setting">
               <a href="#config" target="_self" rel="next" class="link_click" >
                   <img class="icons" src="https://raw.githubusercontent.com/JefersonT4v4res/Projetos/c30e5db020918cfa933147fceef0106b8edbd182/settins.svg" alt="icon settings">
-                  <span class="name_button">Configurações</span>
+                  <span class="name_button">Settings</span>
               </a>
          </div> 
          
@@ -57,22 +56,28 @@
          </div> 
          
       </aside>
+
+      <!--Main -->
+     <main class="container__main">
+        <div>
+          <h1 class="page-title">
+            Weather Calculator </h1>
+          <p class="page-subtitle">
+            Find out what is the temperature!
+          </p>
+              <img src="./images/rabit.png" class="page-logo" alt="">
+              <p class="resultCalc"> 
+                <label for="moeda">Type the temperature in Fahrenheit ° F</label><br>
+                <input type="number" id="valor" size="2" /><br>
+                <button type="submit" onclick="weatherCalculation()">Convert</button>
+                <h2 id="valorConvertido"></h2>
+              </p>
+          </div>        
+      
+      </main>
     </div>  
 
-  <!--Main -->
-<main class="container__main">
-    <div>
-      <h1 class="page-title">
-        Weather Calculator </h1>
-      <p class="page-subtitle">
-        Find out what is the temperature!
-      </p>
-      <img src="./images/rabit.png" class="page-logo" alt="">
-      <p class="resultCalc"> 
-          weatherCalculation();
-      </p>
-  </div>
-</main>
+  
 </body>
 
 </html>

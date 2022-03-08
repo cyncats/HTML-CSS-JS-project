@@ -1,11 +1,14 @@
 function weatherCalculation()
 { 
-var TempFah = prompt("What is the temperature in Fahrenheit? ");
+var tempFah = document.getElementById("valor");
+var value = tempFah.value;
+var valueFahNum = parseFloat(value)
 
-var TempCel = (TempFah - 32) * (5/9);
-var TempCelFinal = TempCel.toFixed(1)
+var tempCel = (valueFahNum - 32) * (5/9);
+var tempCelFinal = tempCel.toFixed(1)
 
-console.log("The temperature in Celsius is: " + TempCelFinal)
-output.textContent = weatherCalculation()
+var tempCelConvert = document.getElementById("valorConvertido");
+var valueConvert = "The temperature in Celsius is: " + tempCelFinal;
+tempCelConvert.innerHTML = valueConvert;
 
 }
