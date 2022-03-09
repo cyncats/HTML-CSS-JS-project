@@ -1,4 +1,4 @@
-var secretnumber = parseInt(Math.radon() * 11);
+var secretnumber = parseInt(Math.random() * 11);
 
 function chutar() {
     var elementoResult = document.getElementById("resultado")
